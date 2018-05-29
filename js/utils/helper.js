@@ -9,11 +9,6 @@ export const fetchBusesInfo = async query => {
     return _.sortBy(result.filter(bus => bus.attributes.type === "Bus__c"), [
         "Bus_ID__c"
     ]);
-    // const busInfo = _.sortBy(resultFilteredByBus, ["Bus_ID__c"]);
-    // this.setState({
-    //     busInfo,
-    //     isResultLoaded: true
-    // });
 };
 
 export const getSeatBasedPricing = bus =>
